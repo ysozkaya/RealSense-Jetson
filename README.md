@@ -22,6 +22,7 @@ Now, just run the scripts with the following order:
 * Lastly, run `sh build_pyrealsense2_and_SDK.sh`
 
 **Note:** 'initialize_Jetson.sh' script will clean some unnecessary stuff, upgrade the system and install a swap file for further operations that require more ram than the Jetson module has. Eventually, it reboots the system to make sure changes are in effect. Whenever the command promt requires, enter your password.
+
 **Note:** The second operation that is done by 'sh build_pyrealsense2_and_SDK.sh' builds from source. That means that the operation will take a long time.
 
 You can configure the scripts according to your needs. Note that, pyrealsense2 will be built using CUDA.
