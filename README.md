@@ -7,8 +7,8 @@ Using this repository, one can able to install librealsense to a Jetson module a
 After installing and writing relevant image file to an SD card as described in [user guides](https://developer.nvidia.com/embedded/learn/getting-started-jetson), insert it to the Jetson module and finish the initial setup. 
 
 After the first boot, open a terminal and clone this repository to your system with:
-> `git clone https://github.com/35selim/RealSense-Jetson.git`
-> `cd RealSense-Jetson`
+* `git clone https://github.com/35selim/RealSense-Jetson.git`
+* `cd RealSense-Jetson`
 
 
 Now, just run the scripts with the following order:
