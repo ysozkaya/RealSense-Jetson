@@ -13,14 +13,14 @@ After the first boot, open a terminal and clone this repository to your system w
 
 Now, just run the scripts with the following order:
 1. If you only want to install RealSense SDK
-	* `sh initialize_Jetson.sh`
-	* After reboot, again open a terminal and run `cd RealSense-Jetson`
-	* Lastly, run `sh install_SDK_without_pyrealsense2.sh`
+* `sh initialize_Jetson.sh`
+* After reboot, again open a terminal and run `cd RealSense-Jetson`
+* Lastly, run `sh install_SDK_without_pyrealsense2.sh`
 	
 2. If you want to construct python bindings to use pyrealsense2
-	* `sh initialize_Jetson.sh`
-	* After reboot, again open a terminal and run `cd RealSense-Jetson`
-	* Lastly, run `sh build_pyrealsense2_and_SDK.sh`
+* `sh initialize_Jetson.sh`
+* After reboot, again open a terminal and run `cd RealSense-Jetson`
+* Lastly, run `sh build_pyrealsense2_and_SDK.sh`
 
 **Note:** 'initialize_Jetson.sh' script will clean some unnecessary stuff, upgrade the system and install a swap file for further operations that require more ram than the Jetson module has. Eventually, it reboots the system to make sure changes are in effect. Whenever the command promt requires, enter your password.
 **Note:** The second operation that is done by 'sh build_pyrealsense2_and_SDK.sh' builds from source. That means that the operation will take a long time.
