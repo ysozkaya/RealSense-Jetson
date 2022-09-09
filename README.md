@@ -10,7 +10,6 @@ After the first boot, open a terminal and clone this repository to your system w
 * `git clone https://github.com/35selim/RealSense-Jetson.git`
 * `cd RealSense-Jetson`
 
-
 Now, just run the scripts with the following order:
 1. If you only want to install RealSense SDK
 * `sh initialize_Jetson.sh`
