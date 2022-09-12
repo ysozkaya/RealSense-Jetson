@@ -1,7 +1,7 @@
 # RealSense-Jetson
 <b>Install and build RealSense library for Jetson modules.</b>
 
-Using this repository, one can able to install librealsense to a Jetson module and use RealSense cameras.
+Using this repository, one can able to install librealsense to a Jetson module and use RealSense cameras. I used 'build from source' option and do not use RSUSB implementation described [here](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation_jetson.md) since couldn't run it properly and couldn't install pyrealsense2.
 
 ## Usage
 After installing and writing relevant image file to an SD card as described in [user guides](https://developer.nvidia.com/embedded/learn/getting-started-jetson), insert it to the Jetson module and finish the initial setup. 
