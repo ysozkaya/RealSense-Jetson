@@ -21,7 +21,7 @@ echo "[INFO] Building is starting, it will take a long time like half an hour or
 sleep 2
 sudo make -j$(($(nproc)-1)) && sudo make install
 echo 'export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2' >> ~/.bashrc
-sudo cp ~/.99-realsense-libusb.rules /etc/udev/rules.d/99-realsense-libusb.rules && sudo udevadm control --reload-rules && udevadm trigger
+sudo cp ~/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d/ && sudo udevadm control --reload-rules && udevadm trigger
 
 echo "[INFO] pyrealsense2 and RealSense SDK are ready to use!"
 echo '[INFO] pyrealsense2 can only be used with "python3" not with "python"!'
