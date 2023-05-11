@@ -20,7 +20,10 @@ sudo make uninstall && sudo make clean
 echo "[INFO] Building is starting, it will take a long time like half an hour or more!"
 sleep 2
 sudo make -j$(($(nproc)-1)) && sudo make install
-echo 'export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3.6/pyrealsense2' >> ~/.bashrc
+
+echo 'PYTHONPATH="/usr/local/lib:/usr/local/lib/python3.6/pyrealsense2:$PYTHONPATH"' >> ~/.bashrc
+echo 'export PYTHONPATH' >> ~/.bashrc
+
 sudo cp ~/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d/ && sudo udevadm control --reload-rules && udevadm trigger
 
 echo "[INFO] pyrealsense2 and RealSense SDK are ready to use!"
